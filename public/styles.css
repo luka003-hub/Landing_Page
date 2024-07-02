@@ -10,7 +10,7 @@ header {
     background-color: purple;
     color: white;
     padding: 20px 0;
-    position: fixed;
+    position: center;
     width: 100%;
 }
 
@@ -145,7 +145,7 @@ header nav ul li a {
 footer {
     background-color: purple;
     color: white;
-    text-align: right;
+    text-align: center;
     padding: 5px 0;
     width: 100%;
     bottom: 0;
