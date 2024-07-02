@@ -31,7 +31,7 @@ header nav ul li a {
     text-decoration: underline;
 }
 
-#intro {
+#home {
     text-align: center;
     padding: 50px 20px;
     background: url("images/background.png") no-repeat center center;
@@ -45,17 +45,17 @@ header nav ul li a {
     margin: 0;
 }
 
-#intro h1 {
+#home h1 {
     margin-bottom: 10px;
     font-size: 5rem;
 }
 
-#intro p {
+#home p {
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
-#intro button {
+#home button {
     background-color: #fff;
     color: purple;
     padding: 10px 20px;
@@ -65,7 +65,7 @@ header nav ul li a {
     cursor: pointer;
 }
 
-#intro button:hover {
+#home button:hover {
     background-color: purple;
     color: #fff;
 }
