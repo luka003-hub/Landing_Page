@@ -1,15 +1,17 @@
 body {
     background-image: url("./public/images/background.png");
     background-size: cover;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: purple;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
 }
 
 header nav ul {
@@ -17,7 +19,7 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 header nav ul li {
@@ -32,11 +34,40 @@ header nav ul li a {
 #intro {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    background: url("images/background.png") no-repeat center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 #intro h1 {
     margin-bottom: 10px;
+    font-size: 5rem;
+}
+
+#intro p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#intro button {
+    background-color: #fff;
+    color: purple;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#intro button:hover {
+    background-color: purple;
+    color: #fff;
 }
 
 #features {
@@ -44,16 +75,43 @@ header nav ul li a {
     text-align: center;
 }
 
+#features h2 {
+    font-size: 3rem;
+}
+
 .feature {
-    display:inline;
-    width: 30%;
-    padding: 20px;
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .feature img {
-    width: 100%;
+    width: 50%;
     height: auto;
+    margin-right: 20px;
+}
+
+.feature-text {
+    text-align: left;
+}
+
+.feature h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.feature p {
+    margin-top: 10px;
+    font-size: 1.2rem
+}
+
+.feature.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature.reverse img {
+    margin-right: 0;
+    margin-left: 20px;
 }
 
 #about {
@@ -62,12 +120,33 @@ header nav ul li a {
     text-align: center;
 }
 
-footer {
-    background-color: #333;
-    color: white;
+#about h2 {
+    font-size: 3rem;
+}
+
+#about p {
+    font-size: 1.3rem;
+}
+
+#about a:hover {
+    color: purple;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: purple;
+    color: white;
+    text-align: right;
+    padding: 5px 0;
     width: 100%;
     bottom: 0;
 }
